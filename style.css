@@ -406,7 +406,7 @@ footer .social-links{
 }
 
 /*=================== RESPOSIVO =====================*/
-@media (min-width: 102.4rem) {
+@media (min-width: 1024px) {
  /* ======= geral =====================*/ 
  .wrapper{
     width: min(112rem, 100%);
@@ -428,6 +428,7 @@ nav#navigation .wrapper * {
     color: initial;
     background-color: initial;
     filter: initial;
+    position: initial;
 }
 
 nav#navigation .close-menu,
@@ -449,16 +450,16 @@ nav#navigation .menu ul:nth-child(1){
 }
 
 nav#navigation .menu ul li a {
-    color: var(--primery-color);
+    color: var(--primary-color);
     opacity: 0.7;
 }
 
 nav#navigation .menu a.button{
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 1rem 2.4rem;
+    color: var(--primary-color);
     border: 1px solid var(--primary-color);
     border-radius: 4rem;
     font-weight: 700;
@@ -474,7 +475,7 @@ nav#navigation .menu a.button:hover{
 }
 
 nav#navigation.scroll .menu ul li a{
-    color: var(--brand-light);
+    color: var(--brand-green-light);
     opacity: 0.6;
 }
 
@@ -498,10 +499,9 @@ nav#navigation .menu li a::after{
     width: 0%;
     height: 2px;
     background-color: var(--primary-color);
-    position: reletive; /* liberar a função bottom, top, left, right */
+    position: relative; /* liberar a função bottom, top, left, right */
     bottom: -2rem;
     left: -0.5rem;
-    padding-inline: 0.8rem; 
     display: block;
     transition: width 0.2s;
 }
@@ -545,6 +545,14 @@ nav#navigation.scroll .menu a.button{
     grid-area: B;
 }
 
+#home h1{
+    font-size: 5.2rem;
+}
+
+#home .content p{
+    font-size: 1.8rem;
+}
+
 #home .stats{
     grid-area: C;
     flex-direction: row;
@@ -553,7 +561,7 @@ nav#navigation.scroll .menu a.button{
 }
 
 #home .stats .stat + .stat{
-    border-left: 1px solid var(--primery-color);
+    border-left: 1px solid var(--primary-color);
 }
 
 #home .stats .stat{
